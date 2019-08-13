@@ -1,0 +1,18 @@
+
+
+Vue.use(Vuex)
+export default new Vuex.Store({
+  state: {
+    room: undefined, // Current room
+    username: undefined, // Username
+    status: STATUS_OPTIONS.available, // User status
+    rooms: [] // Available rooms in the whole chat
+  },
+  mutaions: {
+    // Mutation per action (joinRoom, changeRoom, setRooms, leaveChat, changeStatus)
+  },
+  actions: {
+    // Here we define all the actions that will get triggered when:
+    // joinRoom, changeRoom, setRooms, leaveChat, changeStatus
+  }
+})
