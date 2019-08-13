@@ -1,3 +1,6 @@
+import VueSocketIO from 'vue-socket.io'
+import VureResource from 'vue-resource'
+import store from './store'
 import Vue from 'vue'
 import App from './App.vue'
 
@@ -5,7 +8,7 @@ Vue.config.productionTip = false
 
 // Socket config
 Vue.use(new VueSocketIO({
-  debug: true;
+  debug: true,
   connection: `${url}/video-chat`,
   vuex: {
     store, // Attach the store

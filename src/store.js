@@ -1,4 +1,6 @@
-
+import Vue from 'vue'
+import Vuex from 'vuex'
+// import { STATUS_OPTIONS } from './utils/config'
 
 Vue.use(Vuex)
 export default new Vuex.Store({
